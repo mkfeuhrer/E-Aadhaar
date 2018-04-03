@@ -258,7 +258,7 @@ $('.login-form-submit').on("click",function(event){
   if(passwd == pass)
   {
         window.location.href="./Home.html?temp="+userId;
-        console.log("login successfull");
+        alert("login successfull");
   }
   else
   {
