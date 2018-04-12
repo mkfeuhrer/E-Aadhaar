@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>E-Aadhaar</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="css/assets/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->  
+	</head>
+
+	<body>
+
+		<!-- Sidebar -->
+      <section id="sidebar">
+        <div class="inner">
+          <nav>
+            <ul>
+              <li><a href="#intro">Welcome</a></li>
+              <li><a href="#one">Verify User</a></li>
+              <li><a href="#two">Rewards</a></li>
+              <li><button id="logout">Logout</button></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+		<!-- Wrapper -->
+      <div id="wrapper">
+
+        <!-- Intro -->
+          <section id="intro" class="wrapper style1 fullscreen fade-up">
+            <div class="inner">
+              <h1>E-Aadhaar</h1>
+              <h3 id="welcome"> Welcome</h3>
+              <ul class="actions">
+                <li><a href="#one" class="button scrolly">Let's begin</a></li>
+              </ul>
+            </div>
+          </section>
+
+        <!-- One -->
+          <section id="one" class="wrapper style2 spotlights">
+            <section>
+              <div class="content">
+                <div class="inner">
+                  <h2>  User Details </h2>
+                    <div class="container">
+                      <ul>
+                        <li>Name : <span id="showusername"></span></li>
+                        <li>Email : <span id="showemail"></span></li>
+                        <li>Address : <span id="showaddress"></span></li>
+                        <li>Contact : <span id="showcontact"></span></li>
+                      </ul>
+                    </div>
+                  </div>
+            </div>
+            </section>
+          </section>
+
+          <!-- Two -->
+            <section id="two" class="wrapper style3 fade-up toggle">
+              <div class="inner ">
+                <h2 style="align:center;">Other Features</h2>
+                <div class="row container" id="result">
+
+                  <div class="small-12 medium-4 columns">
+                    <img id="result--poster" src="" />
+                  </div>
+
+                <ul class="actions">
+                  <li><a href="#" class="button">Learn more</a></li>
+                </ul>
+              </div>
+            </section>
+
+    <footer>
+    <b><center>Copyrights@E-Aadhaar</center></b>
+    </footer>
+
+
+     <!-- Scripts -->
+      <script src="js/assets/jquery.min.js"></script>
+      <script src="js/assets/jquery.scrollex.min.js"></script>
+      <script src="js/assets/jquery.scrolly.min.js"></script>
+      <script src="js/assets/skel.min.js"></script>
+      <script src="js/assets/util.js"></script>
+      <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+      <script src="js/assets/main.js"></script>
+      <script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+      <script src="./home.js"></script>
+
+  </body>
+
+  <!-- <script>
+var url = window.location.href;
+// console.log(url);
+var arr = url.split('=');
+console.log(arr[1]);
+$("#submit").click(function(){
+    $.ajax({url: window.location.href, success: function(result){
+        //$("#div1").html(result);
+        console.log("works");
+    }});
+});
+</script> -->
+
+</html>

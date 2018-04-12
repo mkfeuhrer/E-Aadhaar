@@ -41,7 +41,7 @@
           </span>
 
           <div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
-            <input class="input100" type="text" name="email">
+            <input class="input100" type="text" name="email" id="useremail">
             <span class="focus-input100" data-placeholder="Email"></span>
           </div>
 
@@ -49,9 +49,38 @@
             <span class="btn-show-pass">
               <i class="zmdi zmdi-eye"></i>
             </span>
-            <input class="input100" type="password" name="pass">
+            <input class="input100" type="password" name="pass" id="userpass">
             <span class="focus-input100" data-placeholder="Password"></span>
           </div>
+
+          <div class="wrap-input100 validate-input" data-validate="Enter password">
+            <span class="btn-show-pass">
+              <i class="zmdi zmdi-eye"></i>
+            </span>
+            <input class="input100" type="password" name="pass" id="usercpass">
+            <span class="focus-input100" data-placeholder="Confirm Password"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input">
+            <input class="input100" type="text" name="username" id="username">
+            <span class="focus-input100" data-placeholder="Username"></span>
+          </div>
+
+          <div class="wrap-input100">
+            <input class="input100" type="number" name="contact" id="usercontact">
+            <span class="focus-input100" data-placeholder="Contact No."></span>
+          </div>
+
+          <div class="wrap-input100">
+            <input class="input100" type="text" name="address" id="useraddress">
+            <span class="focus-input100" data-placeholder="Address"></span>
+          </div>
+
+          <div class="wrap-input100">
+            <input class="input100" type="text" name="type" id="usertype">
+            <span class="focus-input100" data-placeholder="Usertype - Admin or User"></span>
+          </div>
+
 
           <div class="container-login100-form-btn">
             <div class="wrap-login100-form-btn">
@@ -94,7 +123,7 @@
 <!--===============================================================================================-->
   <script src="vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
-  <script src="js/loginmain.js"></script>
+  <script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
   <script src="aadhaar.js"></script>
 
 </body>
