@@ -20,8 +20,8 @@
           <nav>
             <ul>
               <li><a href="#intro">Welcome</a></li>
-              <li><a href="#one">Contact</a></li>
-              <li><a href="#two">Features</a></li>
+              <li><a href="#one">Admin Details</a></li>
+              <li><a href="#two">Verify User</a></li>
               <li><button id="logout">Logout</button></li>
             </ul>
           </nav>
@@ -47,7 +47,7 @@
             <section>
               <div class="content">
                 <div class="inner">
-                  <h2>  User Details </h2>
+                  <h2>  Admin Details </h2>
                     <div class="container">
                       <ul>
                         <li>Name : <span id="showusername"></span></li>
@@ -64,16 +64,25 @@
           <!-- Two -->
             <section id="two" class="wrapper style3 fade-up toggle">
               <div class="inner ">
-                <h2 style="align:center;">Other Features</h2>
-                <div class="row container" id="result">
-
-                  <div class="small-12 medium-4 columns">
-                    <img id="result--poster" src="" />
-                  </div>
-
-                <ul class="actions">
+                <h2>Verify Users</h2>
+                <div class="table-responsive">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>User Name</th>
+                        <th>Status</th>
+                        <th>Email</th>
+                        <th>Mobile</th>
+                        <th>Verify</th>
+                      </tr>
+                    </thead>
+                    <tbody id="userTable">
+                    </tbody>
+                  </table>
+                </div>
+                <!-- <ul class="actions">
                   <li><a href="#" class="button">Learn more</a></li>
-                </ul>
+                </ul> -->
               </div>
             </section>
 
@@ -92,21 +101,7 @@
       <script src="js/assets/main.js"></script>
       <script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
       <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
-      <script src="./home.js"></script>
+      <script src="./admin.js"></script>
 
   </body>
-
-  <!-- <script>
-var url = window.location.href;
-// console.log(url);
-var arr = url.split('=');
-console.log(arr[1]);
-$("#submit").click(function(){
-    $.ajax({url: window.location.href, success: function(result){
-        //$("#div1").html(result);
-        console.log("works");
-    }});
-});
-</script> -->
-
 </html>
